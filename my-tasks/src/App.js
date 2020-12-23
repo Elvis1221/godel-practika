@@ -1,30 +1,23 @@
 import './App.css';
 import {Box} from "./components/Box";
+import {Date} from "./components/Date";
+import {test,test2,test1} from "./components/Test";
+
 
 function App() {
-    const test = [
-        {
-            text: 'test1'
-        },
-        {
-            text: 'test2'
-        },
-        {
-            text: 'test3'
-        },
-        {
-            text: 'test4'
-        },
-        {
-            text: 'test5'
-        },
-    ];
 
     return (
         <div className="App">
             {
-                test.map((item, index) => <Box key={index} text={item.text}/>)
+                test.map((item) => <Box text={item.text}/>)
             }
+            {
+                test1.map((item) => <Box text={item.text}/>)
+            }
+            {
+                test2.map((item) => <Box text={item.text}/>)
+            }
+            <Date time='hi world'/>
         </div>
     );
 }
