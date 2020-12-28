@@ -1,23 +1,23 @@
 import './App.css';
-import {Box} from "./components/Box";
-import {Date} from "./components/Date";
-import {test,test2,test1} from "./components/Test";
+
+import {block1, block2, block3} from "./components/task1/newspaper-blocks";
+import {Newspaper} from "./components/task1/Newspaper,jsx";
 
 
 function App() {
 
     return (
         <div className="App">
+
             {
-                test.map((item) => <Box text={item.text}/>)
+                block1.map((item) => <Newspaper heading={item.heading} subtitle={item.subtitle} article={item.article}/>)
             }
             {
-                test1.map((item) => <Box text={item.text}/>)
+                block2.map((item) => <Newspaper heading={item.heading} subtitle={item.subtitle} article={item.article}/>)
             }
             {
-                test2.map((item) => <Box text={item.text}/>)
+                block3.map((item) => <Newspaper heading={item.heading} subtitle={item.subtitle} article={item.article}/>)
             }
-            <Date time='hi world'/>
         </div>
     );
 }
