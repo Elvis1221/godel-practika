@@ -1,0 +1,7 @@
+@import "../heading/heading.module.css";
+@import "../subtitle/subtitle.module.css";
+@import "../article/article.module.css";
+
+.newspaper {
+    background-color: mediumseagreen;
+}

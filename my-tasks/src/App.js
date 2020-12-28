@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css';
 
-import {newspaperBlock} from "./components/task1/newspaper-blocks";
-import {Newspaper} from "./components/task1/Newspaper";
+import {newsPaperBlock} from "./components/task1/paper-block/newspaper-blocks";
+import {Newspaper} from "./components/task1/newsPaper/Newspaper";
 
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
         <div className="App">
 
             {
-                newspaperBlock.map((item) => <Newspaper heading={item.heading} subtitle={item.subtitle} article={item.article}/>)
+                newsPaperBlock.map((item) => <Newspaper heading={item.heading} subtitle={item.subtitle}
+                                                        article={item.article}/>)
             }
 
         </div>
